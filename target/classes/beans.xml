@@ -14,13 +14,23 @@
 		<property name="name" value="GL India"></property>
 		<property name="salary" value="25000.0"></property>
 	</bean>
-	
-		<!-- bean definitions here -->
+
+	<!-- bean definitions here -->
 	<bean id="emp2" class="com.spring.Employee">
 
 		<property name="id" value="2"></property>
 		<property name="name" value="GL India 2"></property>
 		<property name="salary" value="35000.0"></property>
+	</bean>
+	<bean id="author" class="com.spring.annotations.Author">
+		<property name="id" value="2"></property>
+		<property name="name" value="GL India 2"></property>
+	</bean>
+	<bean id="book" class="com.spring.annotations.Book">
+		<property name="id" value="2"></property>
+		<property name="name" value="Spring.io"></property>
+		<constructor-arg ref="author"></constructor-arg>
+
 	</bean>
 
 </beans>

@@ -4,6 +4,23 @@ public class Employee {
 	private Integer id;
 	private String name;
 	private Double salary;
+	private Address address;
+	
+	
+	
+	public Employee(Integer id, String name, Double salary, Address address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+		this.address = address;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 	public Employee() {
 		super();
 	}
@@ -33,8 +50,9 @@ public class Employee {
 	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + ", address=" + address + "]";
 	}
+
 	
 
 }
